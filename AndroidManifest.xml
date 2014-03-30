@@ -6,7 +6,8 @@
       android:installLocation="internalOnly">
     <application android:icon="@drawable/ic_launcher"
                  android:label="Awesomnium"
-                 android:debuggable="true">
+                 android:debuggable="true"
+                 android:hardwareAccelerated="true">
         <activity android:name=".MainActivity"
                   android:label="Awesomnium"
                   android:screenOrientation="portrait"
@@ -34,7 +35,24 @@
 		          
 		<activity android:label="Sound Test"
 		          android:name=".SoundPoolTest"
+		          android:configChanges="keyboard|keyboardHidden|orientation" />
+		          
+		<activity android:label="full screen test"
+		          android:name=".FullScreenTest"
+		          android:configChanges="keyboard|keyboardHidden|orientation" />
+		<activity android:label="random view test"
+		          android:name=".RenderViewTest"
 		          android:configChanges="keyboard|keyboardHidden|orientation" />	        
+		<activity android:label="bit map test"
+		          android:name=".BitmapTest"
+		          android:configChanges="keyboard|keyboardHidden|orientation" />
+		          
+		<activity android:label="font test"
+		          android:name=".FontTest"
+		          android:configChanges="keyboard|keyboardHidden|orientation" />
+	    <activity android:label="surfaace view test"
+		          android:name=".SurfaceViewTest"
+		          android:configChanges="keyboard|keyboardHidden|orientation" />
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>

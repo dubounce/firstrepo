@@ -24,6 +24,7 @@ public class KeyTest extends Activity implements OnKeyListener {
 		Log.d("stupid", "1");
 	}
 
+	@Override
     public boolean onKey(View view, int keyCode, KeyEvent event) {
     	Log.d("stupid", "2");
     	builder.setLength(0);

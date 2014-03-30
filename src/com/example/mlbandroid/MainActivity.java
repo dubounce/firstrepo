@@ -10,6 +10,11 @@ import android.widget.ListView;
 public class MainActivity extends ListActivity {
 	
 	String tests[] = { 
+			"RenderViewTest", 
+            "ShapeTest", 
+            "BitmapTest",
+            "FontTest", 
+            "SurfaceViewTest",
 			"LifeCycleTest", 
 			"SingleTouchTest", 
 			"MultiTouchTest",
@@ -19,12 +24,7 @@ public class MainActivity extends ListActivity {
             "ExternalStorageTest", 
             "SoundPoolTest", 
             "MediaPlayerTest",
-            "FullScreenTest", 
-            "RenderViewTest", 
-            "ShapeTest", 
-            "BitmapTest",
-            "FontTest", 
-            "SurfaceViewTest" };
+            "FullScreenTest" };
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
